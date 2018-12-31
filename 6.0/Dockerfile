@@ -4,6 +4,7 @@ ADD https://github.com/uw-it-edm/acs-act-as/releases/download/1.112.1/acs-act-as
 
 ADD https://github.com/uw-it-edm/acs-event-publisher/releases/download/1.114.2/acs-event-publisher-1.114.2.amp  /usr/local/tomcat/amps/acs-event-publisher.amp
 
+
 RUN java -jar /usr/local/tomcat/alfresco-mmt/alfresco-mmt*.jar install \
               /usr/local/tomcat/amps/acs-act-as.amp \
               /usr/local/tomcat/webapps/alfresco -nobackup -force
